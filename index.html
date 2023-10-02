@@ -1,7 +1,7 @@
 <html>
     <head>
 
-        <title>Keshav Gallery</title>
+        <title>Arch Viz</title>
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
@@ -61,7 +61,7 @@
             camera.rotation.order = 'YXZ';
             let vrCamera = new THREE.Group();
             scene.add(vrCamera);
-            vrCamera.position.set(0, 0.5, 0)
+            vrCamera.position.set(0, 1.6, 2)
             vrCamera.add(camera);
 
             const light1 = new THREE.AmbientLight( 0x404040, 5 );
@@ -119,8 +119,8 @@
                 const root = gltf.scene;
                 scene.add(root);
                 console.log(root);
-                root.position.set(2 , -0.6 , 0);
-                let scale = 1.5
+                root.position.set(2 , 0 , 0);
+                let scale = 1
                 root.scale.set(scale, scale, scale);
             });
 
